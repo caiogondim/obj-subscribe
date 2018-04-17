@@ -1,6 +1,6 @@
 {
   "name": "obj-subscribe",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Subscribe to changes on object",
   "main": "lib/index.js",
   "directories": {
