@@ -20,3 +20,16 @@ it('executes callback whenever object is changed', () => {
 
   expect(count).toEqual(2)
 })
+
+it('receives obj as callback argument', () => {
+  function callback(callbackObj) {
+    expect(callbackObj).toEqual(obj)
+  }
+
+  const obj = objSubscribe({
+    a: 1,
+    b: 2,
+  }, callback)
+
+  obj.a = 3
+})
