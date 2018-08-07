@@ -11,7 +11,7 @@ npm install --save obj-subscribe
 ```js
 const objSubscribe = require('obj-subscribe')
 
-function callback() {
+function callback(obj) {
   // Callback code
 }
 
