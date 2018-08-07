@@ -13,7 +13,8 @@
     "standard": "11.0.1"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "standard --fix 'lib/*.js' 'test/*.js'"
   },
   "repository": {
     "type": "git",

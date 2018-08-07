@@ -1,8 +1,10 @@
+/* eslint-env jest */
+
 const objSubscribe = require('../lib')
 
 it('executes callback whenever object is changed', () => {
   let count = 0
-  function callback() {
+  function callback () {
     count++
   }
 
@@ -22,13 +24,13 @@ it('executes callback whenever object is changed', () => {
 })
 
 it('receives obj as callback argument', () => {
-  function callback(callbackObj) {
+  function callback (callbackObj) {
     expect(callbackObj).toEqual(obj)
   }
 
   const obj = objSubscribe({
     a: 1,
-    b: 2,
+    b: 2
   }, callback)
 
   obj.a = 3
